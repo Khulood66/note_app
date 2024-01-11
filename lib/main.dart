@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nots_app/Views/notsview.dart';
+import 'package:nots_app/Views/nots_view.dart';
 
 void main() {
   runApp(const NotesApp());
@@ -12,12 +12,11 @@ class NotesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-       brightness: Brightness.dark
-      ),
+      //here make all changes on defult screens settings
+      theme: ThemeData(brightness: Brightness.dark, 
+      //must declear it in pubspecyaml 
+      fontFamily: 'Poppins'),
       home: const NotsView(),
     );
   }
 }
-
-
